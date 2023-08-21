@@ -1,0 +1,49 @@
+.cardContainer {
+	padding: 5rem 3rem;
+	max-width: 20rem;
+	margin: 5rem auto;
+	border-radius: 0.4rem;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 5px solid #d17347;
+	font-family: 'Poppins', sans-serif;
+	font-size: x-large;
+}
+
+a {
+	text-decoration: none;
+	color: #e2e2e2;
+}
+
+a p {
+	font-family: 'Roboto Mono', monospace;
+	font-size: smaller;
+}
+
+.icons {
+	font-size: xx-large;
+	display: flex;
+	color: #d17347;
+	max-width: 2rem;
+	margin: auto;
+	border-bottom: 2px solid #d17347;
+	justify-content: center;
+	justify-items: center;
+	margin-bottom: 4rem;
+}
+
+.cardContainer:hover {
+	transition: all 0.1s linear;
+	transform: scale(1.05);
+}
+
+p {
+	font-family: 'Inter', sans-serif;
+	max-width: 15rem;
+}

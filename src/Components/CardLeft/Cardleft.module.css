@@ -1,0 +1,26 @@
+.cardContainer {
+	padding: 0.9rem 2rem;
+	max-width: 20rem;
+	margin: 5rem auto;
+	border-radius: 0.2rem;
+	cursor:help;
+}
+.icons {
+	font-size: xx-large;
+	display: flex;
+	max-width: 2rem;
+	margin: auto;
+	justify-content: center;
+	justify-items: center;
+}
+
+p {
+	font-family: 'Inter', sans-serif;
+	max-width: 15rem;
+}
+
+.icons:hover{
+	transition: all 0.5s ease;
+	color: #d17347;
+	
+}
