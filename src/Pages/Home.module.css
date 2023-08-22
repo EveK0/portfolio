@@ -1,10 +1,13 @@
 .content {
-	margin-left: 1rem;
 	display: flex;
 	flex-direction: column;
 	color: #ebfaef;
 	font-size: small;
 	font-family: 'Roboto', sans-serif;
+}
+
+.content h1 {
+	max-width: 35rem;
 }
 
 .content header p {
@@ -13,18 +16,38 @@
 
 }
 
+.see_more {
+	margin: 1rem auto 15rem;
+}
+
+#arrow {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	font-size: xx-large;
+	margin: 1rem auto;
+	max-width: min-content;
+	border-radius: 100%;
+	border: 1px solid transparent;
+	cursor: pointer;
+	padding: 1rem 2rem;
+	transition: all 0.3s linear;
+}
+
+#arrow:hover {
+	scroll-behavior: smooth;
+	transform: scale(1.1);
+	background-color: #0f3d1e;
+}
+
 @media(min-width: 800px) {
 	header img {
 		-webkit-user-select: none;
-		/* Safari */
 		-ms-user-select: none;
-		/* IE 10 and IE 11 */
 		user-select: none;
-		/* Standard syntax */
 		width: 100%;
 		display: flex;
-		margin-top: -5rem;
-		margin-bottom: -30rem;
+		margin-bottom: -35rem;
 	}
 }
 
@@ -51,7 +74,12 @@ header span {
 	display: flex;
 	justify-content: start;
 	margin-bottom: 1.5rem;
-	color: #d17347;
+}
+
+header span:first-child {
+	background-color: #d17347;
+	padding: 0.1rem 1rem;
+	border-radius: 0.2rem;
 }
 
 main span {
@@ -88,7 +116,7 @@ button:hover {
 }
 
 .img_wrapper img {
-	margin: -4rem auto 4rem;
+	margin: 4rem auto 4rem;
 	border-radius: 10rem;
 	max-width: 15rem;
 	mix-blend-mode: screen;

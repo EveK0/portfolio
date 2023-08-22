@@ -1,5 +1,5 @@
 import styles from './Home.module.css';
-import { FiKey, FiSearch } from 'react-icons/fi'
+import { FiSearch } from 'react-icons/fi'
 import { BsFolderCheck, BsPersonFillAdd } from 'react-icons/bs'
 import { SiTypescript } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
@@ -21,7 +21,7 @@ const Home = () => {
 					<h1>Searching for a Backend Developer who understands the nuances of frontend development?</h1>
 				</Reveal>
 				<Reveal>
-					<h1>I'm Kaylane Santos, <span>&nbsp;welcome. </span></h1>
+					<h1>I'm Kaylane Santos,&nbsp; <span>welcome. </span></h1>
 				</Reveal>
 				<br />
 				<Reveal>
@@ -38,6 +38,10 @@ const Home = () => {
 						<button className={styles.button_secondary}> More about</button>
 					</a>
 				</div>
+				<div className={styles.see_more}>
+					<h1>SEE MORE</h1>
+					<span id={styles.arrow}>&#x2193;</span>
+				</div>
 			</header>
 			<center>
 				<main>
@@ -46,10 +50,9 @@ const Home = () => {
 							<h1>Projects <span>.</span></h1>
 						</Reveal>
 						<div className={styles.projects_wrapper}>
-							<Card title='Register Token' icon={<FiKey />} link='https://github.com/EveK0/register-token-api' description='A system to register a token, with full documentation | Node js/Typescript' backgroundColor='#14141499' />
-							<Card title='Organizer File' icon={<BsFolderCheck />} link='https://github.com/EveK0/rust-organizer' description='A organizer file by downloads of your PC. | Rust lang' backgroundColor='#14141499' />
-							<Card title='Web scraping' icon={<FiSearch />} link='https://github.com/EveK0/subscan-srcaping' description='With this app you can get all ABIs of subscan ethereum net | Javascript' backgroundColor='#14141499' />
-							<Card title='2Auth and Oauth system' icon={<BsPersonFillAdd />} link='#' description='Authentication system using 2auth and Oauth | Typescript' backgroundColor='#14141499' />
+							<Card tech='Typescript & MongoDB' title='2Auth and Oauth system' icon={<BsPersonFillAdd />} link='#' description='Authentication system using 2auth and Oauth' backgroundColor='#14141499' />
+							<Card tech='Rust' title='Organizer File' icon={<BsFolderCheck />} link='https://github.com/EveK0/rust-organizer' description='A organizer file by downloads of your PC.' backgroundColor='#14141499' />
+							<Card tech='Javascript' title='Web scraping' icon={<FiSearch />} link='https://github.com/EveK0/subscan-srcaping' description='With this app you can get all ABIs of subscan ethereum net' backgroundColor='#14141499' />
 						</div>
 
 					</section>
@@ -84,22 +87,20 @@ const Home = () => {
 						<footer>
 							<div className={styles.footer}>
 								<div className={styles.row}>
-									<a href="#"><i className="fa fa-instagram"></i></a>
-									<a href="#"><i className="fa fa-github"></i></a>
-									<a href="#"><i className="fa fa-linkedin"></i></a>
+									<a target='_blank' href="https://www.instagram.com/santos_afk/"><i className="fa fa-instagram"></i></a>
+									<a target='_blank' href="https://www.github.com/EveK0"><i className="fa fa-github"></i></a>
+									<a target='_blank' href="https://www.linkedin.com/in/kaylane-santos07/"><i className="fa fa-linkedin"></i></a>
 								</div>
 								<div className={styles.row}>
 									<ul>
-										<li><a href="#">Contact us</a></li>
-										<li><a href="#">Our Services</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-										<li><a href="#">Terms & Conditions</a></li>
+										<li><a href="#contact">Contact us</a></li>
+										<li><a href="#about">Privacy Policy</a></li>
 										<li><a href="#">Career</a></li>
 									</ul>
 								</div>
 
 								<div className="row">
-									Copyright © 2023 Santos
+									Copyright © 2023 Kaylane-dev
 								</div>
 							</div>
 						</footer>

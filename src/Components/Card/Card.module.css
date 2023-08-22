@@ -1,7 +1,7 @@
 .cardContainer {
-	padding: 5rem 3rem;
+	padding: 4rem 3rem;
 	max-width: 20rem;
-	margin: 5rem auto;
+	margin: 2rem auto;
 	border-radius: 0.4rem;
 	cursor: pointer;
 }
@@ -19,12 +19,10 @@
 a {
 	text-decoration: none;
 	color: #e2e2e2;
+	font-weight: 200;
 }
 
-a p {
-	font-family: 'Roboto Mono', monospace;
-	font-size: smaller;
-}
+
 
 .icons {
 	font-size: xx-large;
@@ -39,11 +37,22 @@ a p {
 }
 
 .cardContainer:hover {
+	transform: scale(1.102);
 	transition: all 0.1s linear;
-	transform: scale(1.05);
 }
+.tech{
+	background-color: #141414;
+	padding: 0.3rem 1rem;
+	color: #585858;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.hidden_content {
+	visibility: hidden;
+}
+
 
 p {
 	font-family: 'Inter', sans-serif;
-	max-width: 15rem;
+	max-width: 10rem;
 }
