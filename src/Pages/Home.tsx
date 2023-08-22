@@ -1,6 +1,6 @@
 import styles from './Home.module.css';
 import { FiKey, FiSearch } from 'react-icons/fi'
-import { BsFolderCheck } from 'react-icons/bs'
+import { BsFolderCheck, BsPersonFillAdd } from 'react-icons/bs'
 import { SiTypescript } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaRust, FaHtml5, FaCss3 } from 'react-icons/fa';
@@ -49,6 +49,7 @@ const Home = () => {
 							<Card title='Register Token' icon={<FiKey />} link='https://github.com/EveK0/register-token-api' description='A system to register a token, with full documentation | Node js/Typescript' backgroundColor='#14141499' />
 							<Card title='Organizer File' icon={<BsFolderCheck />} link='https://github.com/EveK0/rust-organizer' description='A organizer file by downloads of your PC. | Rust lang' backgroundColor='#14141499' />
 							<Card title='Web scraping' icon={<FiSearch />} link='https://github.com/EveK0/subscan-srcaping' description='With this app you can get all ABIs of subscan ethereum net | Javascript' backgroundColor='#14141499' />
+							<Card title='2Auth and Oauth system' icon={<BsPersonFillAdd />} link='#' description='Authentication system using 2auth and Oauth | Typescript' backgroundColor='#14141499' />
 						</div>
 
 					</section>
