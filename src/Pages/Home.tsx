@@ -4,7 +4,7 @@ import { BsFolderCheck, BsPersonFillAdd } from 'react-icons/bs'
 import { SiTypescript } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaRust, FaHtml5, FaCss3 } from 'react-icons/fa';
-import { DiScrum } from 'react-icons/di';
+import { DiPhp } from 'react-icons/di';
 import Card from '../Components/Card/Card';
 import CardLeft from '../Components/CardLeft/Cardleft';
 import { useCopyToClipboard } from 'usehooks-ts'
@@ -74,7 +74,7 @@ const Home = () => {
 							<CardLeft title='Rust' icon={<FaRust />} hoverBackground='transparent' hoverColor='#424242' />
 							<CardLeft title='CSS' icon={<FaCss3 />} hoverBackground='transparent' hoverColor='#2f8ce9' />
 							<CardLeft title='Javascript' icon={<IoLogoJavascript />} hoverBackground='transparent' hoverColor='#d8c440' />
-							<CardLeft title='SCRUM' icon={<DiScrum />} hoverBackground='transparent' hoverColor='#67b3ff' />
+							<CardLeft title='SCRUM' icon={<DiPhp />} hoverBackground='transparent' hoverColor='#67b3ff' />
 						</div>
 					</section>
 					<section className={styles.contact}>
