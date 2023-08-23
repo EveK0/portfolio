@@ -1,6 +1,6 @@
 .cardContainer {
 	padding: 4rem 3rem;
-	max-width: 20rem;
+	max-width: 25rem;
 	margin: 2rem auto;
 	border-radius: 0.4rem;
 	cursor: pointer;
@@ -11,14 +11,14 @@
 	margin-bottom: 1rem;
 	text-align: center;
 	font-weight: bold;
-	border-bottom: 5px solid #d17347;
+	border-bottom: 5px solid var(--accent);
 	font-family: 'Poppins', sans-serif;
 	font-size: x-large;
 }
 
 a {
 	text-decoration: none;
-	color: #e2e2e2;
+	color: var(--text);
 	font-weight: 200;
 }
 
@@ -27,10 +27,10 @@ a {
 .icons {
 	font-size: xx-large;
 	display: flex;
-	color: #d17347;
+	color: var(--accent);
 	max-width: 2rem;
 	margin: auto;
-	border-bottom: 2px solid #d17347;
+	border-bottom: 2px solid var(--accentcontrast);
 	justify-content: center;
 	justify-items: center;
 	margin-bottom: 4rem;
@@ -41,18 +41,15 @@ a {
 	transition: all 0.1s linear;
 }
 .tech{
-	background-color: #141414;
 	padding: 0.3rem 1rem;
-	color: #585858;
+	color: var(--text);
 	font-family: 'Roboto Mono', monospace;
+	font-size: var(--p);
 }
 
 .hidden_content {
 	visibility: hidden;
 }
-
-
 p {
 	font-family: 'Inter', sans-serif;
-	max-width: 10rem;
 }

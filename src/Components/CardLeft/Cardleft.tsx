@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import { useHover } from 'usehooks-ts'
 
 interface CardProps {
-	backgroundColor: string;
+	backgroundColor?: string;
 	icon: ReactNode;
 	hoverBackground: string;
 	hoverColor: string;
@@ -16,12 +16,12 @@ const CardLeft = (props: CardProps) => {
 	const isHover = useHover(hoverRef)
 	return (
 		<div className={styles.cardContainer} ref={hoverRef} style={{
-			backgroundColor: isHover ? props.hoverBackground : '#0f3d1e ',
-			transition: 'all 0.5s ease-in-out'
+			backgroundColor: isHover ? props.hoverBackground : 'var(--primary)',
+			transition: 'all 0.2s ease-in-out'
 		}}
 			title={props.title}
 		>
-			<span className={styles.icons} style={{ color: isHover ? props.hoverColor : '#ebfaef', }} ref={hoverRef}>{props.icon}</span>
+			<span className={styles.icons} style={{ color: isHover ? props.hoverColor : 'var(--text)', }} ref={hoverRef}>{props.icon}</span>
 		</div>
 	)
 }

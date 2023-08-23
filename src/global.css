@@ -7,10 +7,29 @@
 
 
 body {
-	background-color: #0f0f0f;
+	background-color: #000;
+}
+
+:root {
+	--h1: 48px;
+	--h2: 32px;
+	--subtitle: 24px;
+	--p: 18px;
+	--sub: 16px;
+	--small: 14px;
+	--text: #d6e6d7;
+	--bg: #040b04;
+	--primary: #302e84;
+	--secondary: #0f2a0f;
+	--accent: #be4846;
+	--primarycontrast: #64d97b;
+	--secondarycontrast: #64d97b;
+	--accentcontrast: #ff8f8f;
+	--textcontrast: #64d97b;
+	--bgcontrast: #64d97b;
 }
 
 ::selection {
-	background-color: #e7e7e7;
-	color: #5349ad;
+	background-color: #f5faf8;
+	color: var(--accent);
 }

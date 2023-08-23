@@ -1,23 +1,51 @@
 .content {
 	display: flex;
 	flex-direction: column;
-	color: #ebfaef;
-	font-size: small;
-	font-family: 'Roboto', sans-serif;
+	color: var(--text);
 }
 
 .content h1 {
-	max-width: 35rem;
+	max-width: 55rem;
+	font-size: var(--h1);
+
+}
+
+h2 {
+	font-family: 'Roboto', monospace !important;
+	font-size: var(--h2);
+}
+
+.Skills {
+	margin: 5rem auto;
+	padding-top: 2rem;
+	color: var(--text);
+	border-radius: 0.5rem;
 }
 
 .content header p {
-	font-size: small;
+	max-width: 25rem;
+	font-size: var(--p);
 	font-family: 'Roboto Mono', monospace;
 
 }
 
 .see_more {
-	margin: 1rem auto 15rem;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	align-items: center;
+	font-size: 16px;
+}
+
+.see_more p {
+	margin: 0 1rem 0 1.5rem;
+}
+
+header h1 span {
+	font-size: var(--h1);
+	background: linear-gradient(120deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #arrow {
@@ -37,7 +65,8 @@
 #arrow:hover {
 	scroll-behavior: smooth;
 	transform: scale(1.1);
-	background-color: #0f3d1e;
+	color: var(--bg);
+	background-color: var(--secondarycontrast);
 }
 
 @media(min-width: 800px) {
@@ -54,11 +83,8 @@
 @media (max-width: 800px) {
 	header img {
 		-webkit-user-select: none;
-		/* Safari */
 		-ms-user-select: none;
-		/* IE 10 and IE 11 */
 		user-select: none;
-		/* Standard syntax */
 		visibility: hidden;
 		display: none;
 	}
@@ -69,31 +95,27 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 }
 
-header span {
-	text-align: start;
-	display: flex;
-	justify-content: start;
-	margin-bottom: 1.5rem;
-}
-
-header span:first-child {
-	background-color: #d17347;
-	padding: 0.1rem 1rem;
-	border-radius: 0.2rem;
-}
 
 main span {
-	color: #d17347;
+	color: var(--accent);
 }
 
 .email span {
-	color: #ebfaef;
+	color: var(--text);
+}
+
+.contact {
+	border-radius: 10px;
+}
+
+.email:hover {
+	transform: scale(1.04);
 }
 
 button {
 	cursor: pointer;
-	padding: 0.6rem 2rem;
-	font-family: 'Inter', sans-serif;
+	font-size: var(--sub);
+	padding: 1rem 2.5rem;
 	font-weight: 400;
 	margin: 2rem 2rem 5rem 0;
 	border: 1px solid transparent;
@@ -106,13 +128,13 @@ button:hover {
 }
 
 .button_primary {
-	background-color: #5a2eb8;
-	color: #ebfaef;
+	background-color: var(--primary);
+	color: var(--text);
 }
 
 .button_secondary {
-	background-color: #0f3d1e;
-	color: #ebfaef;
+	background-color: var(--secondary);
+	color: var(--text);
 }
 
 .img_wrapper img {
@@ -127,37 +149,45 @@ button:hover {
 
 
 .projects h1 {
+	margin: 5rem auto;
 	text-align: center;
-	font-size: x-large;
+	font-size: var(--h1);
 }
 
+
 .projects_wrapper {
+	margin: 5rem auto;
 	display: flex;
 	padding: 1rem;
 	flex-wrap: wrap;
 }
 
-h1 {
-	font-size: x-large;
-	margin: auto;
+main h1 {
+	border-bottom: 5px solid var(--accentcontrast);
+	font-size: var(--sub);
+	margin: 2rem auto;
 	display: flex;
 	justify-content: center;
 }
 
 .skills_wrapper {
+	max-width: 25rem;
 	display: flex;
+	justify-content: start;
+	justify-items: start;
 	padding: 1rem;
 	flex-wrap: wrap;
 }
 
 .email {
-	margin: 2rem auto;
+	margin: 5rem auto;
 	display: flex;
+	cursor: pointer;
 	padding: 2rem 4rem;
 	justify-content: center;
 	justify-items: center;
 	width: 22rem;
-	background-color: #0f3d1e;
+	background-color: var(--primary);
 }
 
 .email span {
@@ -172,7 +202,7 @@ h1 {
 
 .footer {
 	margin: 8rem auto 0;
-	background: #0f0f0f;
+	background: var(--bg);
 	padding: 30px 0px;
 	font-family: 'Play', sans-serif;
 	text-align: center;
@@ -182,18 +212,18 @@ h1 {
 	width: 100%;
 	margin: 1% 0%;
 	padding: 0.6% 0%;
-	color: #bebebe;
-	font-size: 0.8em;
+	color: var(--accentcontrast);
+	font-size: var(--small);
 }
 
 .footer .row a {
 	text-decoration: none;
-	color: #bebebe;
+	color: var(--text);
 	transition: 0.5s;
 }
 
 .footer .row a:hover {
-	color: #fff;
+	color: var(--secondarycontrast);
 }
 
 .footer .row ul {
@@ -206,7 +236,7 @@ h1 {
 }
 
 .footer .row a i {
-	font-size: 2em;
+	font-size: var(--small);
 	margin: 0% 1%;
 }
 
