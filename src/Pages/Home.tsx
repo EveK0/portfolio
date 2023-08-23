@@ -83,7 +83,7 @@ const Home = () => {
 						</Reveal>
 						<div>
 							<Reveal>
-								<div title='Click to copy' className={styles.email} style={{ backgroundColor: value ? '#d17347' : '#4b3361 ', transition: '0.5ms all ease-in-out' }}>
+								<div title='Click to copy' className={styles.email} style={{ backgroundColor: value ? 'var(--accent)' : 'var(--primary) ', transition: '0.5ms all ease-in-out' }}>
 									<span id={styles.email_icon}><AiOutlineMail /></span>
 									<span onClick={() => copy('kaylanefs39@gmail.com')}>{value ? 'Successfully copied' : 'kaylanefs39@gmail.com'}</span>
 								</div>
