@@ -105,7 +105,6 @@ const Home = () => {
 										<li><a href="#">Career</a></li>
 									</ul>
 								</div>
-
 								<div className="row">
 									Copyright © 2023 Kaylane-dev
 								</div>
