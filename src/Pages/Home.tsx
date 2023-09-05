@@ -90,30 +90,29 @@ const Home = () => {
 							</Reveal>
 						</div>
 					</section>
-					<Reveal>
-						<footer>
-							<div className={styles.footer}>
-								<div className={styles.row}>
-									<a target='_blank' href="https://www.instagram.com/santos_afk/"><i className="fa fa-instagram"></i></a>
-									<a target='_blank' href="https://www.github.com/EveK0"><i className="fa fa-github"></i></a>
-									<a target='_blank' href="https://www.linkedin.com/in/kaylane-santos07/"><i className="fa fa-linkedin"></i></a>
-								</div>
-								<div className={styles.row}>
-									<ul>
-										<li><a href="#contact">Contact us</a></li>
-										<li><a href="#about">Privacy Policy</a></li>
-										<li><a href="#">Career</a></li>
-									</ul>
-								</div>
-								<div className="row">
-									Copyright © 2023 Kaylane-dev
-								</div>
-							</div>
-						</footer>
-					</Reveal>
 				</main>
 			</center>
-
+			<Reveal>
+				<footer>
+					<div className={styles.footer}>
+						<div className={styles.row}>
+							<a target='_blank' href="https://www.instagram.com/santos_afk/"><i className="fa fa-instagram"></i></a>
+							<a target='_blank' href="https://www.github.com/EveK0"><i className="fa fa-github"></i></a>
+							<a target='_blank' href="https://www.linkedin.com/in/kaylane-santos07/"><i className="fa fa-linkedin"></i></a>
+						</div>
+						<div className={styles.row}>
+							<ul>
+								<li><a href="#contact">Contact us</a></li>
+								<li><a href="#about">Privacy Policy</a></li>
+								<li><a href="#">Career</a></li>
+							</ul>
+						</div>
+						<div className="row">
+							Copyright © 2023 Kaylane-dev
+						</div>
+					</div>
+				</footer>
+			</Reveal>
 		</div>
 	)
 }
