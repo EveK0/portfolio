@@ -1,4 +1,4 @@
-## To use this repository, install the dependencies first with: 
+## To use this repository, install the dependencies with: 
 ```bash
 yarn dev
 ```
